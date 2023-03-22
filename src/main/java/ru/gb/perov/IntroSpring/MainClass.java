@@ -22,11 +22,11 @@ public class MainClass {
                 cart.showAllProductsInCart();
             } else if (request.equals("help")) {
                 help();
-            } else if (request.substring(request.length() - 1).equals("-") &&
+            } else if (request.endsWith("-") &&
                     Long.parseLong(request.substring(0, request.length() - 1)) > 0) {
                 cart.removeProductFromCart(Long.parseLong(request.substring(0, request.length() - 1)));
                 cart.showAllProductsInCart();
-            } else if (request.substring(request.length() - 1).equals("+") &&
+            } else if (request.endsWith("+") &&
                     Long.parseLong(request.substring(0, request.length() - 1)) > 0) {
                 cart.addProductToCart(Long.parseLong(request.substring(0, request.length() - 1)));
                 cart.showAllProductsInCart();
