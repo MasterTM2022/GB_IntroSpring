@@ -8,7 +8,7 @@ public class MainClass {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("ru.gb.perov.IntroSpring");
         help();
-        CartServiceEE cart = context.getBean(CartServiceEE.class);
+        CartService cart = context.getBean(CartService.class);
         ProductRepositiry repo = context.getBean(ProductRepositiry.class);
         Scanner in = new Scanner(System.in);
         String request;

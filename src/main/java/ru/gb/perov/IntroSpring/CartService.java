@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 @Component
 @Scope("prototype")
-public class CartServiceEE {
+public class CartService {
     private ArrayList<Product> cartProducts;
 
     @PostConstruct
